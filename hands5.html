@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Pages</title>
+    <style>
+        body{text-align:center;}
+        table, th, td {border: 1px solid black; 
+}
+    .center {
+          margin-left: auto;
+          margin-right: auto;
+        }    
+      #list-1{display:inline-block;text-align: left;}
+    </style>
+</head>
+<body>
+  <div style="background-color:yellow">
+    <h2 id="heading">Navigation To Different Web Pages</h2><br>
+    <a id="login" href="#login-form">LOGIN</a><br>
+    <br>
+    <a id="table" href="#table-1">TABLE</a><br>
+    <br>
+    <a id="about" href="#about-heading">ABOUT</a>
+  </div>
+  <div style="background-color:lightpink">
+    <h4>Registration</h4><br>
+    <form id="login-form">
+        <label>Name :</label>
+        <input type="text" id="fname"><br>
+        <label>Password :</label>
+        <input type="text"><br>
+        <label>Email :</label>
+        <input type="text"><br>
+        <label>Courses:</label>
+        <select type="text" id="course">
+         
+          <option value="CSE">CSE</option>
+          <Option value="Mech">Mech</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="AI">AI</option>
+          <option value="BM">BM</option>
+        </select><br>
+        <label for="Address">Address :</label>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+        <label >Country :</label>
+        <input list="Countries" >
+
+
+        <datalist id="Countries">
+          <option value="India">
+          <option value="Sri Lanka">
+          <option value="England">
+          <option value="Germany">
+          <option value="US">
+        </datalist><br>
+        <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+    </form></div>
+  <div style="background-color:grey">
+        <h1 id="heading"><i>TABLES AND LISTS</i></h1><br>
+        <table class="center" id="table-1""width:50%">
+        <tr><th>Roll No</th><th><i>Name</i></th><th>Course</th><th>Department</th></tr>
+        <tr><td>101</td><td>Femy</td><td>Information Technology</td><td>IT</td></tr>
+        <tr><td>102</td><td>Singh</td><td>Mechanical</td><td>ME</td></tr>
+        <tr><td>103</td><td>Helen</td><td>Electronics & Communication</td><td>ECE</td></tr>
+        <tr><td>104</td><td>Mini</td><td>Electronics</td><td>EEE</td></tr>
+        <tr><td>105</td><td>Alen</td><td>Artificial Intelligence</td><td>AI</td></tr>
+        <tr><td>106</td><td>John</td><td>Civil</td><td>c</td></tr>
+        </table><br>
+        <h2 id="courses"><i>COURSES AVAILABLE</I></h2>
+        <ul id="list-1"><li>Computer Science</li><li>Electronics</li><li>Aerounetics</li><li>Mechanical</li><li>Information Technology</li></ul>
+   </div>
+  <div style="background-color:pink">
+    <h1 id="about-heading">About Page</h1>
+    <p id="description">Need any changes regarding the registration or selectiong courses contact the management.</p>
+  </div>
+</body>
+</html>
